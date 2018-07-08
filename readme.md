@@ -51,7 +51,7 @@ All contributions are welcome:
 * Request a new issue with creating a `New issue` with the `enhancement` tag. 
 * Find any kind of errors in the deck and create a `New issue` with the details or fork the project and do a Pull Request.
 * Suggest an improvement for the deck.
-* Contribution (Code of Conduct)[code-of-conduct.md]
+* Contribution [Code of Conduct](code-of-conduct.md)
 
 ## License:
 
