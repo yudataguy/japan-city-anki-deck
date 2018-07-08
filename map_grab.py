@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # Load csv city file
-city = pd.read_csv('city_eng.csv', index_col=False)
+city = pd.read_csv('jp_city_eng.csv', index_col=False)
 
 # Add a nation column, for better research result
 city['country'] = 'japan'
@@ -51,7 +51,7 @@ jp_city_final['html'] = '<img src="' + jp_city_final['image'] + '">'
 jp_city_final['population'].describe()
 
 # Import Japanese city name
-japanese = pd.read_excel('jp_cities_wiki_0.xlsx')
+japanese = pd.read_excel('jp_city_jp.xlsx')
 # Combine Japanese and English columns
 jp_city_final = pd.concat([japanese, jp_city_final], axis=1)
 # Make prefecture as tag for anki
