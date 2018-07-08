@@ -41,6 +41,8 @@ Reference: Google Map API Static Maps [Developer Guide](https://developers.googl
 
 Reference: Japanese City Ranking by Population ([Wikipedia](https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%B8%82%E3%81%AE%E4%BA%BA%E5%8F%A3%E9%A0%86%E4%BD%8D))
 
+Reference: [Creating Anki Flashcard with Audio and Pictures](http://womenlearnthai.com/index.php/creating-anki-flashcard-decks-with-audio-and-pictures/)
+
 ## Issue: 
 1. Possible translation error: All translation made by Google Translate, some were fixed, some may remain. 
 2. Possible inaccurate map: due to inaccurate name or translation. 
