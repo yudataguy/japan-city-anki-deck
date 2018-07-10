@@ -33,9 +33,9 @@ Reference: Google Map API Static Maps [Developer Guide](https://developers.googl
 
 ### Scale: 
 ```
-    1. Regualr
-    2. High resolution
-    4. Premium(not available for regular api)
+    1: Regualr
+    2: High resolution
+    4: Premium(not available for regular api)
 ```
 
 ## Deck Field:
