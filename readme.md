@@ -4,16 +4,16 @@
 
 Anki Shared Deck: https://ankiweb.net/shared/info/893061193
 
-This anki deck includes 815 Japanese cities/wards, sorted by population. The deck includes three types of card, 
+This anki deck includes 815 Japanese cities/wards, sorted by population. The deck includes three types of card: 
 1. Japanese city name / Romaji city name
 2. Romaji city name / Japanese city name
 3. Map
 
 ## Map Customization:
 
-The map file is generated with [Google Map API](https://developers.google.com/maps/documentation/), with map label customization. It hides the city and prefecture text and shows the train station and attraction. Aim to improve geography knowledge.
+The map file is generated with [Google Map API](https://developers.google.com/maps/documentation/), with map label customization. It hides the city and prefecture text and shows the train station and attraction. This aims to improve geography knowledge.
 
-Map label customization made with https://mapstyle.withgoogle.com/, customized JSON file included. You can either build on current customization with import `gmap_style.json` JSON file on the website or build customization from scratch. 
+Map label customization made with https://mapstyle.withgoogle.com/, customized JSON file included. You can either build on current customization with import `gmap_style.json` on the website or build customization from scratch. 
 
 Google Map static image URL format: 
 ```
