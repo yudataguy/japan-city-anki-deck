@@ -39,16 +39,17 @@ python build_maps.py --fixed --clean   # regenerate just the corrected cities, r
 
 ### Free alternative: Stadia Maps
 
-`build_maps.py --provider stadia` uses [Stadia Maps](https://stadiamaps.com/), whose Static Maps API is **free for non-commercial use** (this deck qualifies). It needs coordinates, so it geocodes each city first — **two** requests per tile. The default style is `stamen_toner_background`, which is **label-free out of the box** (clean roads + coastlines, no city names), so it works for the deck's "no answer on the map" goal with no extra setup:
+`build_maps.py --provider stadia` uses [Stadia Maps](https://stadiamaps.com/), whose Static Maps API is **free for non-commercial use** (this deck qualifies). It needs coordinates, so it geocodes each city first — **two** requests per tile. The default style is `stamen_watercolor` — colored and **label-free** (shows roads + water, no city names), so it works for the deck's "no answer on the map" goal with no extra setup:
 
 ```bash
 export STADIA_API_KEY=your_key
 python build_maps.py --provider stadia --skip-existing
-# or, for terrain instead of roads:
-python build_maps.py --provider stadia --map-style stamen_terrain_background --skip-existing
+# other label-free options:
+python build_maps.py --provider stadia --map-style stamen_toner_background     # high-contrast B/W
+python build_maps.py --provider stadia --map-style stamen_terrain_background   # colored terrain, no roads
 ```
 
-Labelled built-in styles (`alidade_smooth`, `stamen_toner`, etc.) show city names; the tool warns if you pick one. For full control, create a custom style at [client.stadiamaps.com](https://client.stadiamaps.com/) and pass its slug via `--map-style`. The map carries a small Stadia/OSM attribution footer (license requirement), which is not a place label.
+Labelled built-in styles (`alidade_smooth`, `stamen_toner`, `outdoors`, etc.) show city names; the tool warns if you pick one. For a *familiar* colored road map without labels, create a custom style at [client.stadiamaps.com](https://client.stadiamaps.com/) (base it on OSM Bright/Outdoors, turn off the place-label layers) and pass its slug via `--map-style`. The map carries a small Stadia/OSM attribution footer (license requirement), which is not a place label.
 
 > Note: MapTiler's free tier does **not** include the Static Maps API (`--provider maptiler` returns HTTP 403 on free; it needs a paid plan). Stadia is the recommended free option.
 

@@ -38,6 +38,10 @@ MAP_DIR = "map"
 
 DEFAULT_ZOOM = 12
 TILE_SIZE = "480x360"
+# Tiles are saved as JPEG to keep the deck small (watercolor compresses well).
+# Set IMAGE_EXT = "png" for lossless. Providers are fetched as PNG and re-encoded.
+IMAGE_EXT = "jpg"
+JPEG_QUALITY = 65
 
 # --- Google Static Maps (default provider) ---
 GOOGLE_URL = "https://maps.googleapis.com/maps/api/staticmap?key="
@@ -152,6 +156,19 @@ def combo(city, prefecture):
     return s.replace(" ", "+").replace("-", "+")
 
 
+def encode(content):
+    """Re-encode fetched PNG bytes to the configured tile format (JPEG by default,
+    quality JPEG_QUALITY) so the deck stays small. PNG passes through untouched."""
+    if IMAGE_EXT == "png":
+        return content
+    from io import BytesIO
+    from PIL import Image
+    im = Image.open(BytesIO(content)).convert("RGB")
+    buf = BytesIO()
+    im.save(buf, "JPEG", quality=JPEG_QUALITY, optimize=True)
+    return buf.getvalue()
+
+
 def _check_image(resp, what="request"):
     if resp.status_code != 200 or not resp.headers.get("Content-Type", "").startswith("image"):
         raise RuntimeError(f"{what} HTTP {resp.status_code} {resp.text[:120]!r}")
@@ -223,7 +240,7 @@ def stadia_fetch(requests, key, city, prefecture, zoom, style):
 PROVIDERS = {
     "google":   {"env": "GOOGLE_MAPS_API_KEY", "style": None,             "fetch": google_fetch,   "reqs": 1, "labeled": set()},
     "maptiler": {"env": "MAPTILER_API_KEY",    "style": "streets-v2",     "fetch": maptiler_fetch, "reqs": 2, "labeled": MAPTILER_LABELED_STYLES},
-    "stadia":   {"env": "STADIA_API_KEY",      "style": "stamen_toner_background", "fetch": stadia_fetch, "reqs": 2, "labeled": STADIA_LABELED_STYLES},
+    "stadia":   {"env": "STADIA_API_KEY",      "style": "stamen_watercolor", "fetch": stadia_fetch, "reqs": 2, "labeled": STADIA_LABELED_STYLES},
 }
 
 
@@ -250,7 +267,7 @@ def rebuild_final_csv(rows, path):
                 pop = str(int(float(r["population"])))
             except ValueError:
                 pop = r["population"].strip()
-            html = f'<img src="{combo(ce, pe)}.png">'
+            html = f'<img src="{combo(ce, pe)}.{IMAGE_EXT}">'
             w.writerow([r["prefecture_jp"].strip(), r["city_jp"].strip(), pe, ce, pop, html, pe])
 
 
@@ -288,6 +305,11 @@ def main():
             import requests
         except ModuleNotFoundError:
             sys.exit("error: 'requests' is required (pip install -r requirements.txt)")
+        if IMAGE_EXT != "png":
+            try:
+                import PIL  # noqa: F401
+            except ModuleNotFoundError:
+                sys.exit("error: 'Pillow' is required for JPEG tiles (pip install -r requirements.txt)")
         os.makedirs(args.out, exist_ok=True)
 
     rows = load_rows(args.csv)
@@ -307,8 +329,8 @@ def main():
     for i, r in enumerate(targets, 1):
         key = (r["prefecture_jp"], r["city_jp"])
         center = combo(r["city"], r["prefecture"])
-        new_path = os.path.join(args.out, center + ".png")
-        old_path = os.path.join(args.out, combo(OLD_ROMAJI.get(key, r["city"]), r["prefecture"]) + ".png")
+        new_path = os.path.join(args.out, center + "." + IMAGE_EXT)
+        old_path = os.path.join(args.out, combo(OLD_ROMAJI.get(key, r["city"]), r["prefecture"]) + "." + IMAGE_EXT)
 
         if args.skip_existing and os.path.exists(new_path):
             skipped += 1
@@ -323,7 +345,7 @@ def main():
         # fetch() validates the response is really an image and raises otherwise,
         # so a failed request can't silently save an error page as a .png.
         try:
-            content = prov["fetch"](requests, api_key, r["city"], r["prefecture"], args.zoom, style)
+            content = encode(prov["fetch"](requests, api_key, r["city"], r["prefecture"], args.zoom, style))
         except Exception as exc:
             print(f"FAIL  [{i}/{total}] {r['city_jp']} ({r['city']}): {exc}")
             failed += 1
