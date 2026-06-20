@@ -14,7 +14,9 @@ The deck is produced by two scripts, run in order:
    - Downloads one map PNG per city into `map/` (backend chosen by `--provider`; see below).
    - Rebuilds `jp_city_final.csv`, deriving `html` (an `<img src="...">` tag) and `tag` (the prefecture) columns so the CSV's filenames always match the tiles on disk.
    - The committed `map/` tiles were generated with `--provider stadia` (label-free `stamen_watercolor`), so they are colored.
-2. **`build_deck.py`** reads `jp_city_final.csv`, bundles the referenced `map/*.png` as media via `genanki`, and writes `japan_city.apkg` (~17 MB). It produces **two subdecks** — `Japanese Cities::Maps` (map → name) and `Japanese Cities::Romaji Names` (JP⇄romaji, both directions) — so the romaji study is optional/filterable. Each city becomes a map note + a names note (stable `guid`s keep re-imports from duplicating).
+2. **`build_deck.py`** reads `jp_city_final.csv`, bundles the referenced `map/*` tiles as media via `genanki`, and writes `japan_city.apkg` (~21 MB). It produces **three subdecks** — `Japanese Cities::Maps` (map → name), `Japanese Cities::Romaji Names` (JP⇄romaji), and `Japanese Cities::Hiragana Names` (JP⇄hiragana) — each optional/filterable. Each city becomes three notes (stable `guid`s keep re-imports from duplicating); the hiragana note is only added when `city_hira` is present.
+
+**Hiragana data** comes from `add_hiragana.py` (one-off): it derives `city_hira`/`prefecture_hira` from Japan Post's KEN_ALL (downloaded from a GitHub mirror — the official URL 404s now; UTF-8 CSV cached at `/tmp/ken_all.csv`), taking the longest-common-prefix of a designated city's ward rows for the city reading, and cross-checks each reading against the romaji. Unmatched/mismatched rows are flagged; `hiragana_overrides.csv` supplies the manual ones (東京都, 篠山市). Run `--write --overrides hiragana_overrides.csv` to apply. Needs `jaconv`. This cross-check also surfaced 3 romaji errors (三田 Sanda, 甲賀 Koka, 大田 Oda).
 
 ### Running the map builder
 

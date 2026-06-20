@@ -8,10 +8,11 @@ This Anki deck helps you memorize 815 Japanese cities/wards (sorted by populatio
 
 **Why romaji?** Japan's road-sign ordinance puts place names in **Hepburn romaji** on guide/direction signs across national highways and NEXCO expressways nationwide (not only Tokyo). Recognizing a city by its romaji reading is directly useful for driving and navigation. Those signs drop long-vowel macrons (they read "Tokyo"/"Ome", not "Tōkyō"/"Ōme"), which matches the romaji style used here.
 
-The deck is split into two subdecks so the romaji study is **optional and easy to filter out** if you only want the maps:
+The deck is split into three subdecks so each study mode is **optional and easy to filter out** — suspend/delete any subdeck you don't want:
 
-- **`Japanese Cities::Maps`** — a label-free map → name the city (geography recall).
-- **`Japanese Cities::Romaji Names`** *(optional)* — Japanese name ⇄ romaji reading (both directions). Suspend or skip this subdeck if you don't want the reading drills.
+- **`Japanese Cities::Maps`** — a colored, label-free map → name the city (geography recall).
+- **`Japanese Cities::Romaji Names`** *(optional)* — Japanese name ⇄ romaji reading (both directions).
+- **`Japanese Cities::Hiragana Names`** *(optional)* — Japanese name ⇄ hiragana reading (both directions).
 
 ## 🗾 Sponsor
 
@@ -91,7 +92,16 @@ pip install -r requirements.txt        # includes genanki
 python build_deck.py                   # -> japan_city.apkg
 ```
 
-`build_deck.py` reads `jp_city_final.csv`, bundles the referenced `map/*.png` files as media, and writes `japan_city.apkg` with the two subdecks described in the Overview. Romaji cards live entirely in the `Romaji Names` subdeck, so a user who only wants geography can suspend/delete that one subdeck without touching the maps.
+`build_deck.py` reads `jp_city_final.csv`, bundles the referenced `map/*` files as media, and writes `japan_city.apkg` with the three subdecks described in the Overview. Each study mode lives in its own subdeck, so a user can suspend/delete any of them independently.
+
+### Hiragana readings
+
+The `city_hira` / `prefecture_hira` columns are populated by `add_hiragana.py`, a one-off that derives readings from Japan Post's KEN_ALL dataset and **cross-checks** each against the romaji (flagging mismatches rather than guessing). `hiragana_overrides.csv` holds the few manual readings (e.g. 東京都, 篠山市) that aren't in the dataset.
+
+```bash
+python add_hiragana.py                                   # report only (no writes)
+python add_hiragana.py --write --overrides hiragana_overrides.csv
+```
 
 ## Deck Field:
 1. Japanese Prefecture

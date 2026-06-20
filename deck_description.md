@@ -6,18 +6,25 @@ Memorize the **815 most populous Japanese cities and wards** — their Japanese 
 
 If you ever **drive in Japan**, this is practical knowledge. Japan's road-sign rules put place names in **Hepburn romaji** on the green/blue guide signs across national highways and expressways nationwide — so a destination you only know in kanji is much easier to follow when you also recognize its romaji. (Those signs drop the long-vowel marks — they read "Tokyo" and "Ome", not "Tōkyō" / "Ōme" — which is exactly how this deck spells them.)
 
-## What's inside — two subdecks
+## What's inside — three subdecks
 
-- **Japanese Cities → Maps** — you see a clean, label-free map and recall which city it is. Builds real geographic intuition (the city/prefecture names are hidden, so the map can't give the answer away).
+- **Japanese Cities → Maps** — you see a colored, label-free map and recall which city it is. Builds real geographic intuition (the city/prefecture names are hidden, so the map can't give the answer away).
 - **Japanese Cities → Romaji Names** *(optional)* — Japanese name ⇄ romaji, drilled both directions.
+- **Japanese Cities → Hiragana Names** *(optional)* — Japanese name ⇄ hiragana, drilled both directions.
 
-**Don't want the reading drills?** The romaji cards are in their own subdeck, so you can ignore them completely: in Anki, right-click the **“Romaji Names”** subdeck → **Suspend**? (or just **Delete** that subdeck). Your map study is untouched. Likewise, you can study only the readings and skip the maps.
+**Only want some of these?** Each mode is its own subdeck, so you can ignore any of them: in Anki, right-click a subdeck (e.g. **“Hiragana Names”**) → **Suspend** (or **Delete**). The others are untouched.
 
 ## Notes
 
 - Population figures: survey of April 2018.
 - City list & rankings: Japanese Wikipedia (日本の市の人口順位).
 - Earlier versions had some incorrect romaji readings from machine translation; these have been corrected.
-- Maps: the deck's static maps are generated from open data; the small attribution credit in the corner is a licensing requirement and does not name the city.
+- Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, © [Stadia Maps](https://stadiamaps.com/), © [Stamen Design](https://stamen.com/). The small credit in each map's corner is a licensing requirement and does not name the city.
+
+## Sponsor
+
+Planning a trip? This deck is sponsored by **[Sansaku](https://sansaku.app)** — an all-in-one Japan travel app for discovering events and spots and building your itinerary.
+
+---
 
 Found an error or have a suggestion? The project is open source (MIT) — issues and pull requests welcome.

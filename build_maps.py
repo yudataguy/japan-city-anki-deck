@@ -143,6 +143,10 @@ FIXED = [
     ("東京都", "青梅市", "Oume", False),
     ("福井県", "大野市", "Oono", False),
     ("広島県", "大竹市", "Ootake", False),
+    # caught by the hiragana cross-check (same-kanji-different-reading)
+    ("兵庫県", "三田市", "Mita", False),
+    ("滋賀県", "甲賀市", "Koga", False),
+    ("島根県", "大田市", "Ota-shi", False),
 ]
 
 FIXED_KEYS = {(p, c) for p, c, _, _ in FIXED}
@@ -257,10 +261,12 @@ def select_targets(rows, mode):
 
 
 def rebuild_final_csv(rows, path):
-    """Derive jp_city_final.csv (html + tag columns) from the source rows."""
+    """Derive jp_city_final.csv (html + tag columns) from the source rows.
+    Carries prefecture_hira/city_hira through from the source if present."""
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f, lineterminator="\n")
-        w.writerow(["prefecture_jp", "city_jp", "prefecture", "city", "population", "html", "tag"])
+        w.writerow(["prefecture_jp", "city_jp", "prefecture", "city", "population",
+                    "prefecture_hira", "city_hira", "html", "tag"])
         for r in rows:
             pe, ce = r["prefecture"].strip(), r["city"].strip()
             try:
@@ -268,7 +274,8 @@ def rebuild_final_csv(rows, path):
             except ValueError:
                 pop = r["population"].strip()
             html = f'<img src="{combo(ce, pe)}.{IMAGE_EXT}">'
-            w.writerow([r["prefecture_jp"].strip(), r["city_jp"].strip(), pe, ce, pop, html, pe])
+            w.writerow([r["prefecture_jp"].strip(), r["city_jp"].strip(), pe, ce, pop,
+                        r.get("prefecture_hira", "").strip(), r.get("city_hira", "").strip(), html, pe])
 
 
 def main():

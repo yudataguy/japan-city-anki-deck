@@ -1,12 +1,14 @@
 """Build japan_city.apkg from jp_city_final.csv + the map/ tiles.
 
-The deck is split into two subdecks so the romaji study is optional:
+The deck is split into three subdecks so each study mode is optional:
 
-    Japanese Cities::Maps          label-free map  -> name the city
-    Japanese Cities::Romaji Names  Japanese name  <-> romaji (both directions)
+    Japanese Cities::Maps            label-free map  -> name the city
+    Japanese Cities::Romaji Names    Japanese name  <-> romaji (both directions)
+    Japanese Cities::Hiragana Names  Japanese name  <-> hiragana (both directions)
 
-A user who only wants geography can suspend/delete the "Romaji Names" subdeck
-without touching the maps. Run build_maps.py first so the CSV + tiles exist.
+A user who only wants one mode can suspend/delete the other subdecks. The
+Hiragana subdeck is only built for rows that have a city_hira value. Run
+build_maps.py first so the CSV + tiles exist.
 
     pip install -r requirements.txt
     python build_deck.py            # -> japan_city.apkg
@@ -22,6 +24,8 @@ DECK_MAPS_ID = 1607392319
 DECK_NAMES_ID = 1607392320
 MODEL_MAP_ID = 1607392321
 MODEL_NAMES_ID = 1607392322
+DECK_HIRA_ID = 1607392323
+MODEL_HIRA_ID = 1607392324
 
 CSS = """
 .card { font-family: sans-serif; font-size: 22px; text-align: center; color: black; background: white; }
@@ -46,6 +50,20 @@ NAMES_TEMPLATES = [
         "name": "Romaji to JP",
         "qfmt": '{{CityRomaji}}<br><span class="sub">{{PrefectureRomaji}}</span>',
         "afmt": '{{FrontSide}}<hr>{{CityJP}}<br><span class="sub">{{PrefectureJP}}</span>',
+    },
+]
+HIRA_TEMPLATES = [
+    {
+        "name": "Kanji to Hiragana",
+        "qfmt": '{{CityJP}}<br><span class="sub">{{PrefectureJP}}</span>',
+        "afmt": '{{FrontSide}}<hr>{{CityHira}}<br><span class="sub">{{PrefectureHira}}</span>'
+                '<br><span class="sub">{{CityRomaji}}</span>',
+    },
+    {
+        "name": "Hiragana to Kanji",
+        "qfmt": '{{CityHira}}<br><span class="sub">{{PrefectureHira}}</span>',
+        "afmt": '{{FrontSide}}<hr>{{CityJP}}<br><span class="sub">{{PrefectureJP}}</span>'
+                '<br><span class="sub">{{CityRomaji}}</span>',
     },
 ]
 
@@ -86,15 +104,22 @@ def main():
         fields=[{"name": n} for n in ("CityJP", "CityRomaji", "PrefectureJP", "PrefectureRomaji")],
         templates=NAMES_TEMPLATES, css=CSS,
     )
+    hira_model = genanki.Model(
+        MODEL_HIRA_ID, "JP City Hiragana",
+        fields=[{"name": n} for n in ("CityJP", "CityHira", "PrefectureJP", "PrefectureHira", "CityRomaji")],
+        templates=HIRA_TEMPLATES, css=CSS,
+    )
 
     maps_deck = genanki.Deck(DECK_MAPS_ID, "Japanese Cities::Maps")
     names_deck = genanki.Deck(DECK_NAMES_ID, "Japanese Cities::Romaji Names")
+    hira_deck = genanki.Deck(DECK_HIRA_ID, "Japanese Cities::Hiragana Names")
 
-    media, missing, n = [], [], 0
+    media, missing, n, hira_n = [], [], 0, 0
     with open(args.csv, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
             cjp, crom = row["city_jp"].strip(), row["city"].strip()
             pjp, prom = row["prefecture_jp"].strip(), row["prefecture"].strip()
+            chira, phira = row.get("city_hira", "").strip(), row.get("prefecture_hira", "").strip()
             pop = fmt_pop(row["population"])
             fname = src_from_html(row["html"])
             path = os.path.join(args.map_dir, fname)
@@ -112,9 +137,14 @@ def main():
             names_deck.add_note(genanki.Note(
                 model=names_model, fields=[cjp, crom, pjp, prom],
                 guid=genanki.guid_for(pjp, cjp, "names")))
+            if chira:
+                hira_deck.add_note(genanki.Note(
+                    model=hira_model, fields=[cjp, chira, pjp, phira, crom],
+                    guid=genanki.guid_for(pjp, cjp, "hira")))
+                hira_n += 1
 
-    genanki.Package([maps_deck, names_deck], media_files=media).write_to_file(args.out)
-    print(f"wrote {args.out}: {n} cities, {len(media)} map images bundled")
+    genanki.Package([maps_deck, names_deck, hira_deck], media_files=media).write_to_file(args.out)
+    print(f"wrote {args.out}: {n} cities, {len(media)} map images bundled, {hira_n} hiragana notes")
     if missing:
         print(f"WARNING: {len(missing)} cities missing a map tile (cards made image-less): "
               + ", ".join(missing[:15]) + (" ..." if len(missing) > 15 else ""))
