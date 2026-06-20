@@ -13,6 +13,14 @@ The deck is split into two subdecks so the romaji study is **optional and easy t
 - **`Japanese Cities::Maps`** — a label-free map → name the city (geography recall).
 - **`Japanese Cities::Romaji Names`** *(optional)* — Japanese name ⇄ romaji reading (both directions). Suspend or skip this subdeck if you don't want the reading drills.
 
+## 🗾 Sponsor
+
+This project is sponsored by **[Sansaku](https://sansaku.app)** — your all-in-one Japan travel super app.
+
+Once you've learned these cities, go explore them. Sansaku helps you **discover events and travel spots, build custom travel itineraries, and more** — all in one place, with new features on the way.
+
+🌐 **[sansaku.app](https://sansaku.app)**
+
 ## Building / Regenerating the Deck Data:
 
 `build_maps.py` downloads the map tiles and rebuilds `jp_city_final.csv` from the source list `jp_city_v2.csv` in a single pass.
