@@ -38,7 +38,7 @@
 東京都,江東区,Tokyo,Koto-ku,498109
 兵庫県,西宮市,Hyogo ,Nishinomiya,487850
 千葉県,松戸市,Chiba ,Matsudo-shi,483480
-千葉県,市川市,Chiba ,Ichigawa,481732
+千葉県,市川市,Chiba ,Ichikawa,481732
 大分県,大分市,Oita ,Oita,478146
 岡山県,倉敷市,Okayama ,Kurashiki,477118
 石川県,金沢市,Ishikawa ,Kanazawa,465699
@@ -59,7 +59,7 @@
 大阪府,豊中市,Osaka ,Toyonaka,395479
 東京都,品川区,Tokyo,Shinagawa,386855
 愛知県,岡崎市,Aichi,Okazaki,381051
-愛知県,一宮市,Aichi,Ichimiya,380868
+愛知県,一宮市,Aichi,Ichinomiya,380868
 長野県,長野市,Nagano ,Nagano,377598
 愛知県,豊橋市,Aichi,Toyohashi,374765
 大阪府,吹田市,Osaka ,Suita-shi,374468
@@ -113,7 +113,7 @@
 神奈川県,茅ヶ崎市,Kanagawa ,Chigasaki,239348
 大阪府,寝屋川市,Osaka ,Neyagawa-shi,237518
 佐賀県,佐賀市,Saga ,Saga,236372
-神奈川県,大和市,Kanagawa ,Yamatoichi,232922
+神奈川県,大和市,Kanagawa ,Yamato,232922
 埼玉県,春日部市,Saitama,Kasukabe,232709
 青森県,八戸市,Aomori ,Hachinohe,231257
 東京都,調布市,Tokyo,Chofu,229061
@@ -166,7 +166,7 @@
 神奈川県,秦野市,Kanagawa ,Hatano,167378
 静岡県,磐田市,Shizuoka ,Iwata-shi,167210
 栃木県,小山市,Tochigi ,Oyama,166760
-宮崎県,都城市,Miyazaki,Utsukushi,165029
+宮崎県,都城市,Miyazaki,Miyakonojo,165029
 千葉県,浦安市,Chiba ,Urayasu,164024
 三重県,松阪市,Mie ,Matsusaka,163863
 埼玉県,新座市,Saitama,Niiza,162122
@@ -201,7 +201,7 @@
 沖縄県,沖縄市,Okinawa ,Okinawa,139279
 広島県,尾道市,Hiroshima,Onomichi,138626
 長崎県,諫早市,Nagasaki ,Isahaya,138078
-東京都,青梅市,Tokyo,Oume,139232
+東京都,青梅市,Tokyo,Ome,139232
 滋賀県,草津市,Shiga ,Kusatsu,137247
 愛知県,稲沢市,Aichi,Inazawa,136867
 山口県,岩国市,Yamaguchi ,Iwakuni-shi,136757
@@ -246,7 +246,7 @@
 福岡県,大牟田市,Fukuoka ,Omuta,117360
 栃木県,那須塩原市,Tochigi ,Nasushiobara,117146
 愛知県,半田市,Aichi,Handa,116908
-東京都,東久留米市,Tokyo,Higokurume,116632
+東京都,東久留米市,Tokyo,Higashikurume,116632
 山口県,防府市,Yamaguchi ,Hofu,115942
 広島県,廿日市市,Hiroshima,Hatsukaichi,114906
 群馬県,桐生市,Gunma ,Kiryu,114714
@@ -288,14 +288,14 @@
 岐阜県,可児市,Gifu ,Kani-shi,98695
 新潟県,新発田市,Niigata ,Shibata,98611
 栃木県,鹿沼市,Tochigi ,Kanuma,98374
-愛知県,江南市,Aichi,Gangnam-cho,98359
+愛知県,江南市,Aichi,Konan,98359
 静岡県,島田市,Shizuoka ,Shimada-shi,98112
 岩手県,花巻市,Iwate ,Hanamaki,97702
 福岡県,宗像市,Fukuoka ,Munakata,96516
 福岡県,糸島市,Fukuoka ,Itoshima,96475
 沖縄県,宜野湾市,Okinawa ,Ginowan,96243
 広島県,三原市,Hiroshima,Mihara,96194
-鹿児島県,薩摩川内市,Kagoshima ,Satsuma Kawauchi,96076
+鹿児島県,薩摩川内市,Kagoshima ,Satsumasendai,96076
 北海道,千歳市,Hokkaido,Chitose,95648
 兵庫県,芦屋市,Hyogo ,Ashiya-shi,95350
 長野県,安曇野市,Nagano ,Azumino,95282
@@ -314,22 +314,22 @@
 京都府,亀岡市,Kyoto,Kameoka,89479
 千葉県,四街道市,Chiba ,Yotsukaido-shi,89245
 岐阜県,高山市,Gifu ,Takayama,89182
-愛知県,大府市,Aichi,Ouu-shi,89157
+愛知県,大府市,Aichi,Obu,89157
 岐阜県,関市,Gifu ,Seki,89153
 大阪府,貝塚市,Osaka ,Kaizuka,88694
 北海道,室蘭市,Hokkaido,Muroran,88564
 静岡県,御殿場市,Shizuoka ,Gotemba,88078
-愛知県,日進市,Aichi,Nichin-shi,87977
+愛知県,日進市,Aichi,Nisshin,87977
 東京都,稲城市,Tokyo,Inagi-shi,87636
-愛媛県,四国中央市,Ehime ,Shikoku,87413
+愛媛県,四国中央市,Ehime ,Shikokuchuo,87413
 奈良県,大和郡山市,Nara ,Yamatokoriyama,87050
-愛知県,あま市,Aichi,Asama,86898
+愛知県,あま市,Aichi,Ama,86898
 新潟県,柏崎市,Niigata ,Kashiwazaki,86833
 埼玉県,八潮市,Saitama,Yashio,86717
 千葉県,君津市,Chiba ,Kimitsu,86033
 山形県,米沢市,Yamagata ,Yonezawa,85953
 静岡県,袋井市,Shizuoka ,Fukuroi,85789
-東京都,東大和市,Tokyo,Higashiyamasa,85157
+東京都,東大和市,Tokyo,Higashiyamato,85157
 大阪府,摂津市,Osaka ,Settsu,85007
 愛知県,知多市,Aichi,Chita-shi,84617
 北海道,岩見沢市,Hokkaido,Iwamizawa-shi,84499
@@ -361,15 +361,15 @@
 岐阜県,中津川市,Gifu ,Nakatsugawa,78883
 三重県,名張市,Mie ,Nabari,78795
 群馬県,渋川市,Gunma ,Shibukawa,78391
-茨城県,龍ケ崎市,Ibaraki ,Ryukezaki,78342
+茨城県,龍ケ崎市,Ibaraki ,Ryugasaki,78342
 埼玉県,本庄市,Saitama,Honjo,77881
-奈良県,香芝市,Nara ,Koshi-shi,77561
+奈良県,香芝市,Nara ,Kashiba,77561
 千葉県,香取市,Chiba ,Katori,77499
 愛媛県,宇和島市,Ehime ,Uwajima,77465
 福島県,須賀川市,Fukushima ,Sukagawa-shi,77441
 兵庫県,たつの市,Hyogo ,Tatsuno,77419
 兵庫県,三木市,Hyogo ,Miki,77178
-京都府,城陽市,Kyoto,Joyang,76869
+京都府,城陽市,Kyoto,Joyo,76869
 茨城県,笠間市,Ibaraki ,Kasama-shi,76739
 宮城県,名取市,Miyagi ,Natori,76668
 群馬県,館林市,Gunma ,Tatebayashi,76667
@@ -380,14 +380,14 @@
 鹿児島県,姶良市,Kagoshima ,Aira,75173
 東京都,清瀬市,Tokyo,Kiyose,74864
 和歌山県,田辺市,Wakayama ,Tanabe,74770
-山梨県,甲斐市,Yamanashi ,KA-shi,74386
+山梨県,甲斐市,Yamanashi ,Kai,74386
 愛知県,犬山市,Aichi,Inuyama,74308
 秋田県,大館市,Akita,Odate,74175
-埼玉県,桶川市,Saitama,Okagawa-shi,73936
+埼玉県,桶川市,Saitama,Okegawa,73936
 東京都,国立市,Tokyo,Kunitachi,73655
 徳島県,阿南市,Tokushima,Anan-shi,73019
 佐賀県,鳥栖市,Saga ,Tosu,72902
-京都府,木津川市,Kyoto,Kizukawa-shi,72840
+京都府,木津川市,Kyoto,Kizugawa,72840
 埼玉県,志木市,Saitama,Shiki,72676
 京都府,八幡市,Kyoto,Yawata,72664
 埼玉県,蕨市,Saitama,Warabi,72260
@@ -398,7 +398,7 @@
 大阪府,柏原市,Osaka ,Kashiwara-shi,71112
 京都府,京田辺市,Kyoto,Kyotanabe,70835
 山梨県,南アルプス市,Yamanashi ,Minami-arupusu,70828
-千葉県,八街市,Chiba ,Yachimi-shi,70734
+千葉県,八街市,Chiba ,Yachimata,70734
 福岡県,行橋市,Fukuoka ,Yukuhashi,70586
 愛知県,知立市,Aichi,Chiryu,70501
 埼玉県,鶴ヶ島市,Saitama,Tsurugashima-shi,70255
@@ -420,13 +420,13 @@
 長野県,塩尻市,Nagano ,Shiojiri,67135
 岡山県,総社市,Okayama ,Soja,66855
 熊本県,玉名市,Kumamoto ,Tamana-shi,66782
-滋賀県,栗東市,Shiga ,Rito,66749
+滋賀県,栗東市,Shiga ,Ritto,66749
 千葉県,旭市,Chiba ,Asahi,66586
 大分県,日田市,Oita ,Hita,66523
 福井県,敦賀市,Fukui ,Tsuruga,66165
 群馬県,藤岡市,Gunma ,Fujioka,65708
-香川県,三豊市,Kagawa ,Mifune,65524
-大阪府,藤井寺市,Osaka ,Fujiiji,65438
+香川県,三豊市,Kagawa ,Mitoyo,65524
+大阪府,藤井寺市,Osaka ,Fujiidera,65438
 宮城県,気仙沼市,Miyagi ,Kesennuma,64988
 奈良県,大和高田市,Nara ,Yamato Takada,64817
 茨城県,守谷市,Ibaraki ,Moriya,64753
@@ -437,7 +437,7 @@
 埼玉県,秩父市,Saitama,Chichibu,63555
 愛知県,津島市,Aichi,Tsushima-shi,63431
 青森県,十和田市,Aomori ,Towada-shi,63429
-愛知県,愛西市,Aichi,AISI-SHI,63880
+愛知県,愛西市,Aichi,Aisai,63880
 山口県,山陽小野田市,Yamaguchi ,Sanyo Onoda-shi,62671
 和歌山県,紀の川市,Wakayama ,Kinokawa,62616
 新潟県,村上市,Niigata ,Murakami,62442
@@ -460,21 +460,21 @@
 長野県,千曲市,Nagano ,Chikuma-shi,60298
 静岡県,湖西市,Shizuoka ,Kosai,59789
 熊本県,宇城市,Kumamoto ,Uki,59756
-栃木県,下野市,Tochigi ,Shimotsu,59431
+栃木県,下野市,Tochigi ,Shimotsuke,59431
 香川県,観音寺市,Kagawa ,Kanonji-shi,59409
 徳島県,鳴門市,Tokushima,Naruto,59101
 北海道,北広島市,Hokkaido,Kitahiroshima,59064
 福岡県,福津市,Fukuoka ,Fukutsu,58781
 新潟県,南魚沼市,Niigata ,Minamiuonuma,58568
-沖縄県,糸満市,Okinawa ,Itoumi,58547
+沖縄県,糸満市,Okinawa ,Itoman,58547
 群馬県,安中市,Gunma ,Annaka,58531
 青森県,むつ市,Aomori ,Mutsu,58493
 東京都,千代田区,Tokyo,Chiyoda-ku,58406
-東京都,福生市,Tokyo,Fuuki,58395
+東京都,福生市,Tokyo,Fussa,58395
 熊本県,合志市,Kumamoto ,Koshi-shi,58370
-福島県,二本松市,Fukushima ,Nipponmatsu,58162
+福島県,二本松市,Fukushima ,Nihonmatsu,58162
 島根県,浜田市,Shimane ,Hamada-shi,58105
-福岡県,小郡市,Fukuoka ,Ogura-city,57983
+福岡県,小郡市,Fukuoka ,Ogori,57983
 福岡県,古賀市,Fukuoka ,Koga,57959
 岐阜県,土岐市,Gifu ,Toki,57827
 福島県,南相馬市,Fukushima ,Minamisoma,57797
@@ -484,7 +484,7 @@
 神奈川県,逗子市,Kanagawa ,Zushi,57425
 新潟県,佐渡市,Niigata ,Sado,57255
 奈良県,桜井市,Nara ,Sakurai,57244
-福岡県,直方市,Fukuoka ,Nagata,57146
+福岡県,直方市,Fukuoka ,Nogata,57146
 岩手県,宮古市,Iwate ,Miyako,56676
 愛知県,常滑市,Aichi,Tokoname-shi,56547
 大阪府,高石市,Osaka ,Takaishi,56529
@@ -505,17 +505,17 @@
 埼玉県,羽生市,Saitama,Hanyu,54874
 秋田県,能代市,Akita,Noshiro,54730
 岐阜県,瑞穂市,Gifu ,Mizuho,54354
-滋賀県,湖南市,Shiga ,Hunan,54289
+滋賀県,湖南市,Shiga ,Konan,54289
 茨城県,那珂市,Ibaraki ,Naka,54276
 大阪府,阪南市,Osaka ,Hannan-shi,54276
-宮城県,塩竈市,Miyagi ,Shioga,54187
+宮城県,塩竈市,Miyagi ,Shiogama,54187
 宮崎県,日南市,Miyazaki,Nichinan,54090
 茨城県,坂東市,Ibaraki ,Bando,54087
 鹿児島県,出水市,Kagoshima ,Izumi,53758
 広島県,三次市,Hiroshima,Miyoshi,53615
 和歌山県,岩出市,Wakayama ,Iwade,53452
 熊本県,荒尾市,Kumamoto ,Arao-shi,53407
-京都府,向日市,Kyoto,Tomaruka,53380
+京都府,向日市,Kyoto,Muko,53380
 香川県,坂出市,Kagawa ,Sakaide,53164
 静岡県,裾野市,Shizuoka ,Susono,52737
 埼玉県,幸手市,Saitama,Satte,52524
@@ -523,7 +523,7 @@
 茨城県,常陸太田市,Ibaraki ,Hitachiota-shi,52294
 熊本県,山鹿市,Kumamoto ,Yamaga,52264
 千葉県,山武市,Chiba ,Sanmu-shi,52222
-和歌山県,海南市,Wakayama ,Hainan,51860
+和歌山県,海南市,Wakayama ,Kainan,51860
 茨城県,結城市,Ibaraki ,Yuuki,51594
 宮城県,富谷市,Miyagi ,Tomiya,51591
 埼玉県,白岡市,Saitama,Shiraoka,51535
@@ -532,7 +532,7 @@
 富山県,南砺市,Toyama ,Nanto,51327
 沖縄県,宮古島市,Okinawa ,Miyakojima,51186
 岐阜県,恵那市,Gifu ,Ena,51073
-茨城県,小美玉市,Ibaraki ,Komiyama,50911
+茨城県,小美玉市,Ibaraki ,Omitama,50911
 群馬県,みどり市,Gunma ,Midori-shi,50906
 長野県,須坂市,Nagano ,Suzaka,50725
 岡山県,笠岡市,Okayama ,Kasaoka,50568
@@ -549,7 +549,7 @@
 山口県,萩市,Yamaguchi ,Hagi-shi,49560
 福島県,喜多方市,Fukushima ,Kitakata,49377
 鹿児島県,日置市,Kagoshima ,Hioki,49249
-千葉県,大網白里市,Chiba ,Oimi Shirasato,49184
+千葉県,大網白里市,Chiba ,Oamishirasato,49184
 茨城県,つくばみらい市,Ibaraki ,Tsukuba Mirai,49136
 佐賀県,武雄市,Saga ,Takeo,49062
 鳥取県,倉吉市,Tottori ,Kurayoshi,49044
@@ -599,21 +599,21 @@
 長野県,中野市,Nagano ,Nakano-shi,43909
 新潟県,阿賀野市,Niigata ,Agano,43415
 神奈川県,南足柄市,Kanagawa ,Minamiashigara,43306
-茨城県,下妻市,Ibaraki ,Shimousare,43293
+茨城県,下妻市,Ibaraki ,Shimotsuma,43293
 愛知県,弥富市,Aichi,Yatomi,43269
 岡山県,赤磐市,Okayama ,Akaiwa,43214
 鹿児島県,奄美市,Kagoshima ,Amami,43156
 富山県,魚津市,Toyama ,Uozu,42935
-茨城県,稲敷市,Ibaraki ,Inagaki,42810
+茨城県,稲敷市,Ibaraki ,Inashiki,42810
 茨城県,桜川市,Ibaraki ,Sakuragawa-shi,42632
-茨城県,常陸大宮市,Ibaraki ,Hitoshi Omiya,42587
+茨城県,常陸大宮市,Ibaraki ,Hitachiomiya,42587
 長野県,小諸市,Nagano ,Komoro,42512
 茨城県,かすみがうら市,Ibaraki ,Kasumigaura,42147
 岐阜県,郡上市,Gifu ,Gujo,42090
 沖縄県,南城市,Okinawa ,Nanjo,42016
 鹿児島県,指宿市,Kagoshima ,Ibusuki,41831
-福岡県,中間市,Fukuoka ,Middle market,41796
-兵庫県,篠山市,Hyogo ,Shinoyama,41490
+福岡県,中間市,Fukuoka ,Nakama,41796
+兵庫県,篠山市,Hyogo ,Sasayama,41490
 徳島県,吉野川市,Tokushima,Yoshinogawa,41466
 岡山県,井原市,Okayama ,Ibara-shi,41390
 山形県,寒河江市,Yamagata ,Sagae,41256
@@ -628,13 +628,13 @@
 宮城県,東松島市,Miyagi ,Higashimatsushima,39503
 北海道,網走市,Hokkaido,Abashiri,39077
 千葉県,南房総市,Chiba ,Minamiboso,39033
-島根県,雲南市,Shimane ,Yunnan,39032
-愛媛県,西予市,Ehime ,Nishiichi,38919
+島根県,雲南市,Shimane ,Unnan,39032
+愛媛県,西予市,Ehime ,Seiyo,38919
 徳島県,小松島市,Tokushima,Komatsushima,38755
 大分県,臼杵市,Oita ,Usuki,38748
-福岡県,嘉麻市,Fukuoka ,Koma,38743
+福岡県,嘉麻市,Fukuoka ,Kama,38743
 岐阜県,瑞浪市,Gifu ,Mizunami,38730
-滋賀県,米原市,Shiga ,Mihara,38719
+滋賀県,米原市,Shiga ,Maibara,38719
 千葉県,いすみ市,Chiba ,Isumi,38594
 福島県,相馬市,Fukushima ,Soma,38556
 福島県,田村市,Fukushima ,Tamura,38503
@@ -668,9 +668,9 @@
 山梨県,山梨市,Yamanashi ,Yamanashi,35141
 北海道,伊達市,Hokkaido,Date,34995
 愛媛県,八幡浜市,Ehime ,Yawatahama,34951
-茨城県,行方市,Ibaraki ,Megao,34909
+茨城県,行方市,Ibaraki ,Namegata,34909
 福岡県,大川市,Fukuoka ,Okawa-shi,34838
-愛媛県,東温市,Ehime ,Tozen,34613
+愛媛県,東温市,Ehime ,Toon,34613
 高知県,四万十市,Kochi ,Shimanto,34313
 青森県,黒石市,Aomori ,Kuroishi,34284
 大分県,由布市,Oita ,Yufu,34262
@@ -684,10 +684,10 @@
 岐阜県,下呂市,Gifu ,Gero,33585
 栃木県,矢板市,Tochigi ,Yaita,33354
 青森県,つがる市,Aomori ,Tsugaru,33316
-秋田県,北秋田市,Akita,Hokuto Akita,33224
+秋田県,北秋田市,Akita,Kitaakita,33224
 新潟県,妙高市,Niigata ,Myoko,33199
 京都府,南丹市,Kyoto,Nantan,33145
-福井県,大野市,Fukui ,Oono,33109
+福井県,大野市,Fukui ,Ono,33109
 秋田県,潟上市,Akita,Katagami,33083
 高知県,香南市,Kochi ,Konan,32961
 山口県,柳井市,Yamaguchi ,Yanai,32945
@@ -707,22 +707,22 @@
 鹿児島県,志布志市,Kagoshima ,Shibushi,31479
 長崎県,対馬市,Nagasaki ,Tsushima,31457
 静岡県,伊豆市,Shizuoka ,Izu-shi,31317
-山梨県,中央市,Yamanashi ,Central,31124
-奈良県,宇陀市,Nara ,Uba,31105
+山梨県,中央市,Yamanashi ,Chuo,31124
+奈良県,宇陀市,Nara ,Uda,31105
 香川県,東かがわ市,Kagawa ,Higashikagawa,31311
-奈良県,五條市,Nara ,Gogo,30997
-福島県,本宮市,Fukushima ,Honma,30924
+奈良県,五條市,Nara ,Gojo,30997
+福島県,本宮市,Fukushima ,Motomiya,30924
 兵庫県,朝来市,Hyogo ,Asago,30805
 宮崎県,西都市,Miyazaki,Saito,30683
 山梨県,韮崎市,Yamanashi ,Nirasaki,30680
 岡山県,新見市,Okayama ,Niimi,30658
 徳島県,美馬市,Tokushima,Mima-shi,30501
 富山県,小矢部市,Toyama ,Oyabe-shi,30399
-新潟県,胎内市,Niigata ,Wessai,30198
+新潟県,胎内市,Niigata ,Tainai,30198
 大分県,杵築市,Oita ,Kitsuki-shi,30185
 宮城県,角田市,Miyagi ,Kakuda,30180
 兵庫県,相生市,Hyogo ,Aioi,30129
-長野県,東御市,Nagano ,Tōgi,30107
+長野県,東御市,Nagano ,Tomi,30107
 佐賀県,鹿島市,Saga ,Kashima-shi,29684
 福井県,小浜市,Fukui ,Obama,29670
 茨城県,高萩市,Ibaraki ,Takahagi,29638
@@ -737,11 +737,11 @@
 大分県,国東市,Oita ,Kunisaki,28647
 和歌山県,有田市,Wakayama ,Arita-shi,28470
 秋田県,男鹿市,Akita,Oga-shi,28375
-福岡県,宮若市,Fukuoka ,Miyawakaichi,28112
+福岡県,宮若市,Fukuoka ,Miyawaka,28112
 岩手県,遠野市,Iwate ,Tono-shi,28062
 長野県,大町市,Nagano ,Omachi,28041
 岡山県,美作市,Okayama ,Mimasaka,27977
-広島県,大竹市,Hiroshima,Ootake,27865
+広島県,大竹市,Hiroshima,Otake,27865
 新潟県,加茂市,Niigata ,Kamo shi,27852
 山形県,長井市,Yamagata ,Nagai-shi,27757
 岩手県,二戸市,Iwate ,Ninohe,27611
@@ -751,21 +751,21 @@
 石川県,輪島市,Ishikawa ,Wajima,27216
 岐阜県,山県市,Gifu ,Yamagata,27114
 長崎県,壱岐市,Nagasaki ,Iki,27103
-栃木県,那須烏山市,Tochigi ,Nasu Osan-shi,27047
+栃木県,那須烏山市,Tochigi ,Nasukarasuyama,27047
 高知県,土佐市,Kochi ,Tosa-shi,27038
 熊本県,阿蘇市,Kumamoto ,Aso,27018
-熊本県,上天草市,Kumamoto ,Uesakusa,27006
+熊本県,上天草市,Kumamoto ,Kamiamakusa,27006
 北海道,根室市,Hokkaido,Nemuro-shi,26917
-奈良県,御所市,Nara ,Gosho-shi,26868
+奈良県,御所市,Nara ,Gose,26868
 徳島県,三好市,Tokushima,Miyoshi,26836
 鹿児島県,伊佐市,Kagoshima ,Isa-shi,26810
 広島県,竹原市,Hiroshima,Takehara,26426
-岩手県,八幡平市,Iwate ,Hachimantairi,26355
-山口県,美祢市,Yamaguchi ,Misaki,26159
+岩手県,八幡平市,Iwate ,Hachimantai,26355
+山口県,美祢市,Yamaguchi ,Mine,26159
 福岡県,豊前市,Fukuoka ,Buzen,25940
 山梨県,大月市,Yamanashi ,Otsuki,25419
 熊本県,水俣市,Kumamoto ,Minamata,25411
-秋田県,にかほ市,Akita,Nakaho-shi,25324
+秋田県,にかほ市,Akita,Nikaho,25324
 山梨県,上野原市,Yamanashi ,Uenohara-shi,24805
 和歌山県,御坊市,Wakayama ,Gobo,24801
 岐阜県,飛騨市,Gifu ,Hida,24696
@@ -784,13 +784,13 @@
 大分県,竹田市,Oita ,Takeda-shi,22332
 北海道,留萌市,Hokkaido,Rumoi,22221
 鹿児島県,枕崎市,Kagoshima ,Makurazaki,22046
-北海道,深川市,Hokkaido,Shenzhen,21909
+北海道,深川市,Hokkaido,Fukagawa,21909
 石川県,羽咋市,Ishikawa ,Hakui,21729
 長野県,飯山市,Nagano ,Iiyama-shi,21438
 鹿児島県,阿久根市,Kagoshima ,Akune,21198
 高知県,宿毛市,Kochi ,Sukumo,20907
 岐阜県,美濃市,Gifu ,Mino,20760
-北海道,士別市,Hokkaido,Sobetsu-shi,19914
+北海道,士別市,Hokkaido,Shibetsu,19914
 岩手県,陸前高田市,Iwate ,Rikuzentakata,19758
 佐賀県,多久市,Saga ,Taku,19749
 宮崎県,えびの市,Miyazaki,Ebino,19538
@@ -803,14 +803,14 @@
 北海道,砂川市,Hokkaido,Sunagawa-shi,17694
 高知県,安芸市,Kochi ,Aki-shi,17577
 三重県,熊野市,Mie ,Kumano-shi,17322
-山形県,尾花沢市,Yamagata ,Ozawaza,16953
-鹿児島県,西之表市,Kagoshima ,Nishinooma,15967
+山形県,尾花沢市,Yamagata ,Obanazawa,16953
+鹿児島県,西之表市,Kagoshima ,Nishinoomote,15967
 鹿児島県,垂水市,Kagoshima ,Tarumi,15520
 北海道,芦別市,Hokkaido,Ashibetsu,14676
 石川県,珠洲市,Ishikawa ,Suzu,14625
 高知県,土佐清水市,Kochi ,Tosashimizu,13778
 高知県,室戸市,Kochi ,Muroto,13524
-北海道,赤平市,Hokkaido,Akabane,11105
+北海道,赤平市,Hokkaido,Akabira,11105
 北海道,三笠市,Hokkaido,Mikasa,9076
 北海道,夕張市,Hokkaido,Yubari,8843
-北海道,歌志内市,Hokkaido,Utashinaichi,3583
+北海道,歌志内市,Hokkaido,Utashinai,3583
